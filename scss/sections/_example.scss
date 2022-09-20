@@ -1,0 +1,15 @@
+@use '../custom' as *;
+
+
+// Keyframes
+@keyframes UpDown {
+    0% {transform: translateY(-6px);}
+    100% {transform: translateY(6px);}
+}
+
+// Responsive queries
+@media (max-width: 576px){}
+@media (max-width: 768px){}
+@media (max-width: 992px){}
+@media (max-width: 1200px){}
+@media (min-width: 1400px){}

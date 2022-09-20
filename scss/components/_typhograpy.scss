@@ -1,0 +1,64 @@
+@use '../custom' as *;
+
+//
+// START GLOBAL SETTINGS
+//
+
+body{
+    font-family: $primary-font;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 2rem;
+    span{
+        color: $primary;
+    }
+    strong{
+        background-color: $primary;
+    }
+}
+
+h1, h2, h3, h4, h5{
+    font-family: $primary-font;
+    strong{
+        background: -webkit-linear-gradient($primary, $secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+p, h6, a, button, input, button{
+    font-family: $secondary-font;
+}
+
+button{
+    font-weight: 500!important;
+    color: $black!important;
+}
+
+.typoP_1{
+    h2{
+        font-variant-caps: all-petite-caps;
+        font-size: 3.2rem;
+        font-weight: bold;
+    }
+    p{
+        line-height: 35px;
+        font-size: 1.2rem;
+    }
+}
+
+.text-gray{
+    color: rgba($white, 0.3);
+}
+
+.fw-200{
+    font-weight: 200;
+}
+
+@media (max-width: 576px){
+    h1 {
+        font-size: 2rem;
+    }
+}
